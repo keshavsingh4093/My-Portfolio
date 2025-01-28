@@ -67,3 +67,15 @@ setTimeout(() => {
 
 // Start the typing animation loop
 playTypingAnimation(typingTexts[0]);
+
+
+
+document.getElementById("resume").addEventListener("click",function(event) {
+  event.preventDefault();
+  window.open("./Media/Keshav Singh Resume.pdf", "_blank");
+
+  const link = document.createElement("a");
+  link.href = "./Media/Keshav Singh Resume.pdf";
+  link.download = "Keshav Singh Resume.pdf";
+  link.click();
+});
